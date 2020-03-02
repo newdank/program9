@@ -1,0 +1,38 @@
+import java.util.*;
+public class Program9
+{
+private static void Program9(String A[])
+{
+HashMap<String, List<String> >map=new HashMap<>(); 
+for (int i=0;i<A.length;i++)
+{
+String anagram1=A[i]; 
+char[] anagram=anagram1.toCharArray(); 
+Arrays.sort(anagram); 
+String anagram2=new String(anagram); 
+if (map.containsKey(anagram2))
+{ 
+map.get(anagram2).add(anagram1); 
+} 
+else
+{ 
+List<String> ADD1 = new ArrayList<>(); 
+ADD1.add(anagram1); 
+map.put(anagram2, ADD1); 
+} 
+} 
+for (String ANA : map.keySet())
+{ 
+List<String> ANAGRAMS = map.get(ANA); 
+if (ANAGRAMS.size() > 1)
+{ 
+System.out.print(ANAGRAMS); 
+} 
+} 
+}
+public static void main(String[] D)
+{ 
+String A[] = { "act", "beast","beats", "eat", "tea", "cat" }; 
+Program9(A); 
+} 
+}

@@ -1,0 +1,10 @@
+1) From the code we have submitted, The output will be :-
+
+  "  [beast, beats][eat, tea][act, cat] "
+
+  The output can be changed by add more words in the string A.
+
+
+2)The loop checks the String A once, if the words are anagram, then it will print or else it wont
+
+THANK YOU
